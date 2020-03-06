@@ -16,11 +16,12 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="Escrever mensagem"
+        android:hint="@string/escrever_mensagem"
         android:inputType="textShortMessage|textAutoCorrect"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonEnviar"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/buttonEnviar"
@@ -30,7 +31,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:onClick="enviaMensagem"
-        android:text="Enviar"
+        android:text="@string/enviar"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextMensagem"
         app:layout_constraintBottom_toBottomOf="@+id/editTextMensagem"
         app:layout_constraintEnd_toEndOf="parent" />
