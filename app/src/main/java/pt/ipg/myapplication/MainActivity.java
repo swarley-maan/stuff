@@ -13,13 +13,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
     }
 
     public void enviaMensagem(View view) {
-        final Intent intent = new Intent(this, MostraMensagemActivity.class);
+        Intent intent = new Intent(this, MostraMensagemActivity.class);
+
+        String mensagem="ola mundo";
+
+        intent.putExtra("mensagem",mensagem);
+
         //todo:enviar mensagem
-        
+
         startActivity(intent);
     }
 }
